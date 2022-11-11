@@ -151,7 +151,7 @@ p {
 }
 
 @media screen and (max-width: 1100px) {
-  .logo {
+  .logos {
     display: none;
   }
 }
