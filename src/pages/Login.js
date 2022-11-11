@@ -30,7 +30,7 @@ const Login = () => {
 
   return (
     <div className="authentication">
-      <div className="logo">
+      <div className="logos">
         <img src={Logo} alt="logo" />
       </div>
       <div className="authentication-form card p-3">

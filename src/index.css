@@ -118,7 +118,7 @@ p {
   gap: 70px;
 }
 
-.logo img {
+.logos img {
   height: 50rem;
   width: 50rem;
   animation: zoom-in-zoom-out 2s ease infinite;
