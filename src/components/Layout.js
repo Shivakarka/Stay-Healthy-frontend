@@ -65,10 +65,11 @@ function Layout({ children }) {
             <h1 className="logo">SH</h1>
           </div>
           <div className="menu">
-            {menuToBeRendered.map((menu) => {
+            {menuToBeRendered.map((menu, index) => {
               const isActive = location.pathname === menu.path;
               return (
                 <div
+                  key={index}
                   className={`d-flex menu-item ${
                     isActive && "active-menu-item"
                   }`}
