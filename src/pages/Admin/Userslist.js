@@ -8,11 +8,12 @@ import moment from "moment";
 
 function Userslist() {
   const [users, setUsers] = useState([]);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const dispatch = useDispatch();
   const getUsersData = async () => {
     try {
       dispatch(showLoading());
-      const resposne = await axios.get("/api/admin/get-all-users", {
+      const resposne = await axios.get(`${URL}/api/admin/get-all-users`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

@@ -7,13 +7,14 @@ import { setUser } from "../redux/userSlice";
 
 function ProtectedRoute({ children }) {
   const { user } = useSelector((state) => state.user);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const getUser = async () => {
     try {
       dispatch(showLoading);
       const response = await axios.post(
-        "/api/user/get-user-info-by-id",
+        `${URL}/api/user/get-user-info-by-id`,
         { token: localStorage.getItem("token") },
         {
           headers: {

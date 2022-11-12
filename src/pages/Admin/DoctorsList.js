@@ -9,11 +9,12 @@ import moment from "moment";
 
 function DoctorsList() {
   const [doctors, setDoctors] = useState([]);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const dispatch = useDispatch();
   const getDoctorsData = async () => {
     try {
       dispatch(showLoading());
-      const resposne = await axios.get("/api/admin/get-all-doctors", {
+      const resposne = await axios.get(`${URL}/api/admin/get-all-doctors`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -31,7 +32,7 @@ function DoctorsList() {
     try {
       dispatch(showLoading());
       const resposne = await axios.post(
-        "/api/admin/change-doctor-account-status",
+        `${URL}/api/admin/change-doctor-account-status`,
         { doctorId: record._id, userId: record.userId, status: status },
         {
           headers: {

@@ -11,6 +11,7 @@ import moment from "moment";
 
 function Profile() {
   const { user } = useSelector((state) => state.user);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const params = useParams();
   const [doctor, setDoctor] = useState(null);
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/update-doctor-profile",
+        `${URL}/api/doctor/update-doctor-profile`,
         {
           ...values,
           userId: user._id,
@@ -51,7 +52,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-user-id",
+        `${URL}/api/doctor/get-doctor-info-by-user-id`,
         {
           userId: params.userId,
         },
