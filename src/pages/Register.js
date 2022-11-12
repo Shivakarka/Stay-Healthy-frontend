@@ -6,10 +6,10 @@ import axios from "axios";
 
 const Register = () => {
   const navigate = useNavigate();
-
+  const URL = "https://stayhealthy-backend.onrender.com";
   const onFinish = async (values) => {
     try {
-      const response = await axios.post("/api/user/register", values);
+      const response = await axios.post(`${URL}/api/user/register`, values);
       if (response.data.success) {
         toast.success(response.data.message);
         toast("Redirecting to Login");

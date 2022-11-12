@@ -9,12 +9,13 @@ import moment from "moment";
 
 function Appointments() {
   const [appointments, setAppointments] = useState([]);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const dispatch = useDispatch();
   const getAppointmentsData = async () => {
     try {
       dispatch(showLoading());
       const resposne = await axios.get(
-        "/api/user/get-appointments-by-user-id",
+        `${URL}/api/user/get-appointments-by-user-id`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

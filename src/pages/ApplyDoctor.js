@@ -11,13 +11,14 @@ import moment from "moment";
 
 function ApplyDoctor() {
   const dispatch = useDispatch();
+  const URL = "https://stayhealthy-backend.onrender.com";
   const { user } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/apply-doctor-account",
+        `${URL}/api/user/apply-doctor-account`,
         {
           ...values,
           userId: user._id,

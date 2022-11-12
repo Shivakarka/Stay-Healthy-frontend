@@ -10,10 +10,12 @@ import { hideLoading, showLoading } from "../redux/alertsSlice";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const URL = "https://stayhealthy-backend.onrender.com";
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/user/login", values);
+      const response = await axios.post(`${URL}/api/user/login`, values);
       dispatch(hideLoading());
       if (response.data.success) {
         toast.success(response.data.message);

@@ -7,15 +7,19 @@ import { useDispatch, useSelector } from "react-redux";
 import { showLoading, hideLoading } from "../redux/alertsSlice";
 function Home() {
   const [doctors, setDoctors] = useState([]);
+  const URL = "https://stayhealthy-backend.onrender.com";
   const dispatch = useDispatch();
   const getData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("/api/user/get-all-approved-doctors", {
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("token"),
-        },
-      });
+      const response = await axios.get(
+        `${URL}/api/user/get-all-approved-doctors`,
+        {
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        }
+      );
       dispatch(hideLoading());
       if (response.data.success) {
         setDoctors(response.data.data);

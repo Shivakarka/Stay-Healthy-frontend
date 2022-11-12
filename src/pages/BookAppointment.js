@@ -11,6 +11,7 @@ import moment from "moment";
 import Logo from "./book.svg";
 
 function BookAppointment() {
+  const URL = "https://stayhealthy-backend.onrender.com";
   const [isAvailable, setIsAvailable] = useState(false);
   const navigate = useNavigate();
   const [date, setDate] = useState();
@@ -24,7 +25,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-id",
+        `${URL}/api/doctor/get-doctor-info-by-id`,
         {
           doctorId: params.doctorId,
         },
@@ -48,7 +49,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/check-booking-avilability",
+        `${URL}/api/user/check-booking-avilability`,
         {
           doctorId: params.doctorId,
           date: date,
@@ -77,7 +78,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/book-appointment",
+        `${URL}/api/user/book-appointment`,
         {
           doctorId: params.doctorId,
           userId: user._id,
