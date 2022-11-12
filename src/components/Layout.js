@@ -1,12 +1,13 @@
-import { Badge } from "antd";
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../layout.css";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Badge } from "antd";
 
 function Layout({ children }) {
-  const [collapsed, setCollaped] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   const { user } = useSelector((state) => state.user);
+
   const navigate = useNavigate();
   const location = useLocation();
   const userMenu = [
@@ -25,9 +26,22 @@ function Layout({ children }) {
       path: "/apply-doctor",
       icon: "ri-hospital-line",
     },
+  ];
+
+  const doctorMenu = [
+    {
+      name: "Home",
+      path: "/",
+      icon: "ri-home-line",
+    },
+    {
+      name: "Appointments",
+      path: "/doctor/appointments",
+      icon: "ri-file-list-line",
+    },
     {
       name: "Profile",
-      path: `/profile`,
+      path: `/doctor/profile/${user?._id}`,
       icon: "ri-user-line",
     },
   ];
@@ -55,21 +69,26 @@ function Layout({ children }) {
     },
   ];
 
-  const menuToBeRendered = user?.isAdmin ? adminMenu : userMenu;
-
+  const menuToBeRendered = user?.isAdmin
+    ? adminMenu
+    : user?.isDoctor
+    ? doctorMenu
+    : userMenu;
+  const role = user?.isAdmin ? "Admin" : user?.isDoctor ? "Doctor" : "User";
   return (
     <div className="main">
       <div className="d-flex layout">
         <div className="sidebar">
-          <div className="sidebar-header d-flex">
+          <div className="sidebar-header">
             <h1 className="logo">SH</h1>
+            <h1 className="role">{role}</h1>
           </div>
+
           <div className="menu">
-            {menuToBeRendered.map((menu, index) => {
+            {menuToBeRendered.map((menu) => {
               const isActive = location.pathname === menu.path;
               return (
                 <div
-                  key={index}
                   className={`d-flex menu-item ${
                     isActive && "active-menu-item"
                   }`}
@@ -97,14 +116,20 @@ function Layout({ children }) {
             {collapsed ? (
               <i
                 className="ri-menu-2-fill header-action-icon"
-                onClick={() => setCollaped(false)}
+                onClick={() => setCollapsed(false)}
               ></i>
             ) : (
               <i
                 className="ri-close-fill header-action-icon"
-                onClick={() => setCollaped(true)}
+                onClick={() => setCollapsed(true)}
               ></i>
             )}
+
+            <img
+              className="header-logo"
+              src="https://www.practo.com/providers/static/images/pages/company/about/quality-healthcaremadesimple.svg"
+              alt="STAY-HEALTHY"
+            />
 
             <div className="d-flex align-items-center px-4">
               <Badge
@@ -119,7 +144,8 @@ function Layout({ children }) {
               </Link>
             </div>
           </div>
-          <div className="body"> {children}</div>
+
+          <div className="body">{children}</div>
         </div>
       </div>
     </div>
