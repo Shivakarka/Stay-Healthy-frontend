@@ -20,7 +20,7 @@ const Login = () => {
       if (response.data.success) {
         toast.success(response.data.message);
         localStorage.setItem("token", response.data.data);
-        navigate("https://stayhealthy-frontend.onrender.com/");
+        navigate("/");
       } else {
         toast.error(response.data.message);
       }
@@ -53,10 +53,7 @@ const Login = () => {
             Login
           </Button>
 
-          <Link
-            to="https://stayhealthy-frontend.onrender.com/register"
-            className="anchor mt-3"
-          >
+          <Link to="/register" className="anchor mt-3">
             CLICK HERE TO REGISTER
           </Link>
         </Form>

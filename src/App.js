@@ -29,7 +29,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route
-          path="https://stayhealthy-frontend.onrender.com/login"
+          path="/login"
           element={
             <PublicRoute>
               <Login />
@@ -37,7 +37,7 @@ function App() {
           }
         />
         <Route
-          path="https://stayhealthy-frontend.onrender.com/register"
+          path="/register"
           element={
             <PublicRoute>
               <Register />
@@ -53,7 +53,7 @@ function App() {
           }
         />
         <Route
-          path="https://stayhealthy-frontend.onrender.com/apply-doctor"
+          path="/apply-doctor"
           element={
             <ProtectedRoute>
               <ApplyDoctor />
@@ -61,7 +61,7 @@ function App() {
           }
         />
         <Route
-          path="https://stayhealthy-frontend.onrender.com/notifications"
+          path="/notifications"
           element={
             <ProtectedRoute>
               <Notifications />
@@ -69,7 +69,7 @@ function App() {
           }
         />
         <Route
-          path="https://stayhealthy-frontend.onrender.com/admin/userslist"
+          path="/admin/userslist"
           element={
             <ProtectedRoute>
               <Userslist />
@@ -78,7 +78,7 @@ function App() {
         />
 
         <Route
-          path="https://stayhealthy-frontend.onrender.com/admin/doctorslist"
+          path="/admin/doctorslist"
           element={
             <ProtectedRoute>
               <DoctorsList />
@@ -87,7 +87,7 @@ function App() {
         />
 
         <Route
-          path="https://stayhealthy-frontend.onrender.com/doctor/profile/:userId"
+          path="/doctor/profile/:userId"
           element={
             <ProtectedRoute>
               <Profile />
@@ -96,7 +96,7 @@ function App() {
         />
 
         <Route
-          path="https://stayhealthy-frontend.onrender.com/book-appointment/:doctorId"
+          path="/book-appointment/:doctorId"
           element={
             <ProtectedRoute>
               <BookAppointment />
@@ -104,7 +104,7 @@ function App() {
           }
         />
         <Route
-          path="https://stayhealthy-frontend.onrender.com/appointments"
+          path="/appointments"
           element={
             <ProtectedRoute>
               <Appointments />
@@ -113,7 +113,7 @@ function App() {
         />
 
         <Route
-          path="https://stayhealthy-frontend.onrender.com/doctor/appointments"
+          path="/doctor/appointments"
           element={
             <ProtectedRoute>
               <DoctorAppointments />
