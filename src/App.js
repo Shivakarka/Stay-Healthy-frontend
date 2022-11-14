@@ -15,6 +15,7 @@ import Profile from "./pages/Doctor/Profile";
 import BookAppointment from "./pages/BookAppointment";
 import Appointments from "./pages/Appointments";
 import DoctorAppointments from "./pages/Doctor/DoctorAppointments";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const { loading } = useSelector((state) => state.alerts);
@@ -120,6 +121,8 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
