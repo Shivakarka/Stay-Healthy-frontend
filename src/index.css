@@ -124,6 +124,16 @@ p {
   animation: zoom-in-zoom-out 2s ease infinite;
 }
 
+.doc-image {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  top: 10rem;
+  left: 45rem;
+
+  overflow: hidden;
+}
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);

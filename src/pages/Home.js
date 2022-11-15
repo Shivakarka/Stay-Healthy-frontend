@@ -3,6 +3,7 @@ import axios from "axios";
 import Layout from "../components/Layout";
 import { Col, Row } from "antd";
 import Doctor from "../components/Doctor";
+import doc from "./doc2.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { showLoading, hideLoading } from "../redux/alertsSlice";
 function Home() {
@@ -33,15 +34,18 @@ function Home() {
     getData();
   }, []);
   return (
-    <Layout>
-      <Row gutter={20}>
-        {doctors.map((doctor) => (
-          <Col span={8} xs={24} sm={24} lg={8}>
-            <Doctor doctor={doctor} />
-          </Col>
-        ))}
-      </Row>
-    </Layout>
+    <div>
+      <Layout>
+        <Row gutter={20}>
+          {doctors.map((doctor) => (
+            <Col span={8} xs={24} sm={24} lg={8}>
+              <Doctor doctor={doctor} />
+            </Col>
+          ))}
+        </Row>
+        <img src={doc} className="doc-image" alt="doctors-image" />
+      </Layout>
+    </div>
   );
 }
 

@@ -88,19 +88,25 @@ function Layout({ children }) {
                     isActive && "active-menu-item"
                   }`}
                 >
-                  <i className={menu.icon}></i>
-                  {!collapsed && <Link to={menu.path}>{menu.name}</Link>}
+                  <Link to={menu.path}>
+                    {" "}
+                    <i className={menu.icon}></i>
+                    {!collapsed && menu.name}
+                  </Link>
                 </div>
               );
             })}
             <div
-              className={`d-flex menu-item `}
+              className={`d-flex menu-item`}
               onClick={() => {
                 localStorage.clear();
                 navigate("/login");
               }}
             >
-              <i className="ri-logout-circle-line"></i>
+              <i
+                className="ri-logout-circle-line"
+                style={{ marginLeft: "25px" }}
+              ></i>
               {!collapsed && <Link to="/login">Logout</Link>}
             </div>
           </div>

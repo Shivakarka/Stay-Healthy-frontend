@@ -1,4 +1,3 @@
-import { Button, Col, Form, Input, Row, TimePicker } from "antd";
 import React, { useEffect, useState } from "react";
 import Layout from "../../components/Layout";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +15,9 @@ function Profile() {
   const [doctor, setDoctor] = useState(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  useEffect(() => {
+    getDoctorData();
+  }, []);
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
@@ -73,9 +75,6 @@ function Profile() {
     }
   };
 
-  useEffect(() => {
-    getDoctorData();
-  }, []);
   return (
     <Layout>
       <h1 className="page-title">Doctor Profile</h1>
