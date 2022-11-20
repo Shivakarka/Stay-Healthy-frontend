@@ -6,6 +6,13 @@ Live Link: https://stayhealthy-frontend.onrender.com/
 
 <br>
 
+##Description:
+- A MERN full stack website designed to find and book appointments of doctors for consultation.
+- Users can register and login using their email. Doctors can also apply and be included on the website after approval of admin.
+- Tech Stack: React JS, AntD framework, Bootstrap, Redux-toolkit, Express JS, MongoDB, mongoose, JWT , bcrypt.
+
+<br>
+
 ![captures_chrome-capture-2022-10-21](https://user-images.githubusercontent.com/64298475/202921663-484c0349-debe-4fe5-abba-081c54464dd2.png)
 ![captures_chrome-capture-2022-10-21 (6)](https://user-images.githubusercontent.com/64298475/202921806-f238b647-656f-44c2-82b0-e364f720615e.png)
 ![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/202921672-65782c92-61c0-4655-84e5-c54aa994a316.png)
