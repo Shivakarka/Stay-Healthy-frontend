@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Stay Healthy (Doctor Booking App)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+Live Link: https://stayhealthy-frontend.onrender.com/
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+![captures_chrome-capture-2022-10-21](https://user-images.githubusercontent.com/64298475/202921663-484c0349-debe-4fe5-abba-081c54464dd2.png)
+![captures_chrome-capture-2022-10-21 (1)](https://user-images.githubusercontent.com/64298475/202921669-f585fc0f-fb34-484c-b8f0-dca84ea13c2c.png)
+![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/202921672-65782c92-61c0-4655-84e5-c54aa994a316.png)
+![captures_chrome-capture-2022-10-21 (3)](https://user-images.githubusercontent.com/64298475/202921676-b9ed49f2-430c-45c4-86cb-c682997a83a5.png)
+![captures_chrome-capture-2022-10-21 (4)](https://user-images.githubusercontent.com/64298475/202921679-8a63f09c-166e-4e66-89b0-fa8cc17c78bd.png)
+![captures_chrome-capture-2022-10-21 (5)](https://user-images.githubusercontent.com/64298475/202921685-7b954e26-1b06-4de3-94b9-9f8a23271357.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Steps Required to view the project locally on browser.
+- Download zip or clone the repo using git command
+- Run npm install command to install required dependencies
+- Run npm start to view the web page locally at  http://localhost:3000 in the browser
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Note - You may also require the backend part of this project which is located at another repo.
