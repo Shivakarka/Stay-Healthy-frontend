@@ -13,15 +13,16 @@ Live Link: https://stayhealthy-frontend.onrender.com/
 
 <br>
 
-![captures_chrome-capture-2022-10-21](https://user-images.githubusercontent.com/64298475/202921663-484c0349-debe-4fe5-abba-081c54464dd2.png)
-![captures_chrome-capture-2022-10-21 (6)](https://user-images.githubusercontent.com/64298475/202921806-f238b647-656f-44c2-82b0-e364f720615e.png)
-![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/202921672-65782c92-61c0-4655-84e5-c54aa994a316.png)
-![captures_chrome-capture-2022-10-21 (7)](https://user-images.githubusercontent.com/64298475/202921837-e12a002b-d84e-4d49-b509-62727d00ffd3.png)
-![captures_chrome-capture-2022-10-21 (3)](https://user-images.githubusercontent.com/64298475/202921676-b9ed49f2-430c-45c4-86cb-c682997a83a5.png)
-![captures_chrome-capture-2022-10-21 (4)](https://user-images.githubusercontent.com/64298475/202921679-8a63f09c-166e-4e66-89b0-fa8cc17c78bd.png)
-![captures_chrome-capture-2022-10-21 (5)](https://user-images.githubusercontent.com/64298475/202921685-7b954e26-1b06-4de3-94b9-9f8a23271357.png)
+![captures_chrome-capture-2022-10-24 (2)](https://user-images.githubusercontent.com/64298475/203744375-559142b4-949e-487b-8ba3-294261c70558.png)
+![captures_chrome-capture-2022-10-24 (1)](https://user-images.githubusercontent.com/64298475/203743837-b26db518-9d2e-4955-8cb9-31d751b4bc51.png)
+![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/203744048-d8dfd930-2d97-4e00-9b88-a518e189b004.png)
+![captures_chrome-capture-2022-10-21 (3)](https://user-images.githubusercontent.com/64298475/203744065-dac47af8-4b5a-4602-9362-421c2fb9de14.png)
+![captures_chrome-capture-2022-10-21 (4)](https://user-images.githubusercontent.com/64298475/203744076-bb16d3bd-638d-43c6-9bee-ca6c86ad4293.png)
+![captures_chrome-capture-2022-10-21 (5)](https://user-images.githubusercontent.com/64298475/203744100-e15d224a-c8fe-40f7-9bb0-910c3970e4b5.png)
+![captures_chrome-capture-2022-10-21 (7)](https://user-images.githubusercontent.com/64298475/203744158-b2b29954-475d-428d-bacc-ead5a5752a89.png)
 
 <br>
+
 
 # Steps Required to view the project locally on browser.
 - Download zip or clone the repo using git command
