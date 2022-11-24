@@ -13,7 +13,7 @@ Live Link: https://stayhealthy-frontend.onrender.com/
 
 <br>
 
-![captures_chrome-capture-2022-10-24](https://user-images.githubusercontent.com/64298475/203743754-91bd791d-fe76-434c-9973-3139f057a5f7.png)
+![captures_chrome-capture-2022-10-24 (2)](https://user-images.githubusercontent.com/64298475/203744375-559142b4-949e-487b-8ba3-294261c70558.png)
 ![captures_chrome-capture-2022-10-24 (1)](https://user-images.githubusercontent.com/64298475/203743837-b26db518-9d2e-4955-8cb9-31d751b4bc51.png)
 ![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/203744048-d8dfd930-2d97-4e00-9b88-a518e189b004.png)
 ![captures_chrome-capture-2022-10-21 (3)](https://user-images.githubusercontent.com/64298475/203744065-dac47af8-4b5a-4602-9362-421c2fb9de14.png)
