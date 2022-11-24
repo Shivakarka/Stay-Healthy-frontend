@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "./doc.svg";
+import Logo from "./doc.jpg";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useDispatch } from "react-redux";
@@ -32,11 +32,13 @@ const Login = () => {
 
   return (
     <div className="authentication">
+      <h1 className="stay-healthy" style={{ textAlign: "center" }}>
+        STAY HEALTHY
+      </h1>
       <div className="logos">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" width="800px" height="600px" />
       </div>
-      <div className="authentication-form card p-3">
-        <h1 style={{ textAlign: "center" }}>STAY HEALTHY</h1>
+      <div className="authentication-form card p-3 ">
         <h1 className="card-title">Login Here</h1>
         <Form layout="vertical" onFinish={onFinish}>
           <Form.Item label="Email" name="email">
@@ -58,6 +60,7 @@ const Login = () => {
           </Link>
         </Form>
       </div>
+      <footer>&#169; STAY HEALTHY INC. 2022</footer>
     </div>
   );
 };
