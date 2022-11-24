@@ -134,6 +134,7 @@ p {
   position: relative;
   top: 10rem;
   left: 45rem;
+
   overflow: hidden;
 }
 
@@ -169,6 +170,15 @@ p {
 footer {
   position: absolute;
   bottom: 7%;
+}
+
+footer button {
+  background-color: #5072e4 !important;
+  border-radius: 10px;
+  color: #fff;
+  padding: 6px;
+  margin-bottom: 10px;
+  border: none;
 }
 
 @media screen and (max-width: 1100px) {

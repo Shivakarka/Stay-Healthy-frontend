@@ -20,7 +20,7 @@ const Login = () => {
       if (response.data.success) {
         toast.success(response.data.message);
         localStorage.setItem("token", response.data.data);
-        navigate("/");
+        navigate("/home");
       } else {
         toast.error(response.data.message);
       }
@@ -35,10 +35,12 @@ const Login = () => {
       <h1 className="stay-healthy" style={{ textAlign: "center" }}>
         STAY HEALTHY
       </h1>
+
       <div className="logos">
         <img src={Logo} alt="logo" width="800px" height="600px" />
       </div>
       <div className="authentication-form card p-3 ">
+        {/* <h1 style={{ textAlign: "center" }}>STAY HEALTHY</h1> */}
         <h1 className="card-title">Login Here</h1>
         <Form layout="vertical" onFinish={onFinish}>
           <Form.Item label="Email" name="email">
@@ -60,7 +62,15 @@ const Login = () => {
           </Link>
         </Form>
       </div>
-      <footer>&#169; STAY HEALTHY INC. 2022</footer>
+      <footer>
+        <button
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Back to Main Page
+        </button>
+      </footer>
     </div>
   );
 };

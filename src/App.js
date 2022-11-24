@@ -16,6 +16,7 @@ import BookAppointment from "./pages/BookAppointment";
 import Appointments from "./pages/Appointments";
 import DoctorAppointments from "./pages/Doctor/DoctorAppointments";
 import PageNotFound from "./components/PageNotFound";
+import Landing from "./pages/Landing";
 
 function App() {
   const { loading } = useSelector((state) => state.alerts);
@@ -29,6 +30,14 @@ function App() {
       )}
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
+        <Route
+          path="/"
+          element={
+            <PublicRoute>
+              <Landing />
+            </PublicRoute>
+          }
+        />
         <Route
           path="/login"
           element={
@@ -46,7 +55,7 @@ function App() {
           }
         />
         <Route
-          path="/"
+          path="/home"
           element={
             <ProtectedRoute>
               <Home />

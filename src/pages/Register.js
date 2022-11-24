@@ -2,8 +2,8 @@ import { Button, Form, Input } from "antd";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import Logo from "./doc.jpg";
 import axios from "axios";
+import Logo from "./doc.jpg";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -32,6 +32,7 @@ const Register = () => {
         <img src={Logo} alt="logo" width="800px" height="600px" />
       </div>
       <div className="authentication-form card p-3">
+        {/* <h1 style={{ textAlign: "center" }}>STAY HEALTHY</h1> */}
         <h1 className="card-title">Nice To Meet U</h1>
         <Form layout="vertical" onFinish={onFinish}>
           <Form.Item label="Name" name="name">
@@ -56,7 +57,15 @@ const Register = () => {
           </Link>
         </Form>
       </div>
-      <footer>&#169; STAY HEALTHY INC. 2022</footer>
+      <footer>
+        <button
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Back to Main Page
+        </button>
+      </footer>
     </div>
   );
 };
