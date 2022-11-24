@@ -12,9 +12,8 @@ Live Link: https://stayhealthy-frontend.onrender.com/
 - Tech Stack: React JS, AntD framework, Bootstrap, Redux-toolkit, Express JS, MongoDB, mongoose, JWT , bcrypt.
 
 <br>
-
-![captures_chrome-capture-2022-10-21](https://user-images.githubusercontent.com/64298475/202921663-484c0349-debe-4fe5-abba-081c54464dd2.png)
-![captures_chrome-capture-2022-10-21 (6)](https://user-images.githubusercontent.com/64298475/202921806-f238b647-656f-44c2-82b0-e364f720615e.png)
+![captures_chrome-capture-2022-10-24](https://user-images.githubusercontent.com/64298475/203743507-35afa2bb-db7a-4b07-8d8a-2f4f175db9a5.png)
+![captures_chrome-capture-2022-10-24 (1)](https://user-images.githubusercontent.com/64298475/203743547-e42b4162-b666-4889-9218-4eb6120b0d58.png)
 ![captures_chrome-capture-2022-10-21 (2)](https://user-images.githubusercontent.com/64298475/202921672-65782c92-61c0-4655-84e5-c54aa994a316.png)
 ![captures_chrome-capture-2022-10-21 (7)](https://user-images.githubusercontent.com/64298475/202921837-e12a002b-d84e-4d49-b509-62727d00ffd3.png)
 ![captures_chrome-capture-2022-10-21 (3)](https://user-images.githubusercontent.com/64298475/202921676-b9ed49f2-430c-45c4-86cb-c682997a83a5.png)
