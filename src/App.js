@@ -17,6 +17,9 @@ import Appointments from "./pages/Appointments";
 import DoctorAppointments from "./pages/Doctor/DoctorAppointments";
 import PageNotFound from "./components/PageNotFound";
 import Landing from "./pages/Landing";
+import BookCancel from "./pages/BookCancel";
+import BookSuccess from "./pages/BookSuccess";
+import Payment from "./pages/Payment";
 
 function App() {
   const { loading } = useSelector((state) => state.alerts);
@@ -127,6 +130,33 @@ function App() {
           element={
             <ProtectedRoute>
               <DoctorAppointments />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/booksuccess"
+          element={
+            <ProtectedRoute>
+              <BookSuccess />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/payment"
+          element={
+            <ProtectedRoute>
+              <Payment />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/bookcancel"
+          element={
+            <ProtectedRoute>
+              <BookCancel />
             </ProtectedRoute>
           }
         />

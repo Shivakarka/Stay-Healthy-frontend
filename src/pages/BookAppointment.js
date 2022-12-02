@@ -96,8 +96,7 @@ function BookAppointment() {
 
       dispatch(hideLoading());
       if (response.data.success) {
-        toast.success(response.data.message);
-        navigate("/appointments");
+        navigate("/payment");
       }
     } catch (error) {
       toast.error("Error booking appointment");
@@ -166,12 +165,14 @@ function BookAppointment() {
                 )}
 
                 {isAvailable && (
-                  <Button
-                    className="primary-button mt-3 full-width-button"
-                    onClick={bookNow}
-                  >
-                    Book Now
-                  </Button>
+                  <div>
+                    <Button
+                      className="primary-button mt-3 full-width-button"
+                      onClick={bookNow}
+                    >
+                      Book Now
+                    </Button>
+                  </div>
                 )}
               </div>
             </Col>
