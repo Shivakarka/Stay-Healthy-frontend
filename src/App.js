@@ -135,7 +135,7 @@ function App() {
         />
 
         <Route
-          path="/booksuccess"
+          path="/BookSuccess"
           element={
             <ProtectedRoute>
               <BookSuccess />
@@ -153,7 +153,7 @@ function App() {
         />
 
         <Route
-          path="/bookcancel"
+          path="/BookCancel"
           element={
             <ProtectedRoute>
               <BookCancel />
