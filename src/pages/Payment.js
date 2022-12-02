@@ -5,7 +5,10 @@ export default function Payment() {
   return (
     <div className="container ">
       <h1 className="">Pay Booking Fees :</h1>
-      <form action="/create-checkout-session" method="POST">
+      <form
+        action="https://stayhealthy-backend.onrender.com/create-checkout-session"
+        method="POST"
+      >
         <button
           type="submit"
           id="checkout-button"
