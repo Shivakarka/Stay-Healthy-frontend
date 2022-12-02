@@ -25,7 +25,7 @@ function App() {
   const { loading } = useSelector((state) => state.alerts);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       {loading && (
         <div className="spinner-parent">
           <div className="spinner-border" role="status"></div>
@@ -163,7 +163,7 @@ function App() {
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
