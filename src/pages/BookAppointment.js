@@ -49,7 +49,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        `${URL}/api/user/check-booking-avilability`,
+        `${URL}/api/user/check-booking-availability`,
         {
           doctorId: params.doctorId,
           date: date,
